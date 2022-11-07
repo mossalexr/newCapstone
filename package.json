@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/mossalexr/capstoneProject#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.1",
     "react-router-dom": "^6.4.3"
   }
 }
