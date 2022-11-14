@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.homeImg {
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.foodImg {
+  width: 250px;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sm-img {
+  width: 35%;
+  height: auto;
+}
+
+.sports {
+  background-color: orange;
+}
+
+.food {
+  background-color: red;
+}
+
+.drinks {
+  background-color: darkorchid;
+}
+
+.art {
+  background-color: mediumaquamarine;
+}
+
+.history {
+  background-color: green;
+}
+
+.music {
+  background-color: steelblue;
+}
+
+.navbar-brand {
+  color: rgb(10, 107, 126) !important;
+}
