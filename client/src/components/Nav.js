@@ -18,10 +18,10 @@ const Nav = () => {
                             Attractions
                         </button>
                         <div className="dropdown-menu">
-                            <Link className="dropdown-item" href="#">Fun</Link>
-                            <Link className="dropdown-item" href="#">History</Link>
-                            <Link className="dropdown-item" href="#">Food</Link>
-                            <Link className="dropdown-item" href="#">Drinks</Link>
+                            <Link className="dropdown-item" href="/attractions">Fun</Link>
+                            <Link className="dropdown-item" href="/attractions">History</Link>
+                            <Link className="dropdown-item" href="/attractions">Food</Link>
+                            <Link className="dropdown-item" href="/attractions">Drinks</Link>
                         </div>
                     </div>
 

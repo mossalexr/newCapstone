@@ -12,6 +12,10 @@ const attractionSchema = new Schema({
         required: true,
         type: String,
         unique: true
+    },
+    imageURL: {
+        type: String,
+        required: true
     }
 });
 

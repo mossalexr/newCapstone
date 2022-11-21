@@ -1,50 +1,41 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';  
+import React, { Component } from 'react'; 
 import axios from 'axios';
 
 const Attraction = props => (
-    <tr>
-      <td>{props.exercise.username}</td>
-      <td>
-        <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
-      </td>
-    </tr>
+    <div>
+      <h3>{props.attraction.name}</h3>
+      <h4>{props.attraction.location}</h4>
+      <div>{props.attraction.imageURL}</div>
+    </div>
   )
 
-export default class ExercisesList extends Component {
+export default class AttractionsList extends Component {
     constructor(props) {  
         super(props); 
         
-        this.deleteExercise = this.deleteExercise.bind(this); 
+        this.deleteAttraction = this.deleteAttraction.bind(this); 
         
-        this.state = {exercises: []};  
+        this.state = {attractions: []};  
       }
       componentDidMount() {
-        axios.get(BACKEND_URL + 'exercises/')
+        axios.get('http://localhost:5000/attractions/')
          .then(response => {
-           this.setState({ exercises: response.data });
+           this.setState({ attractions: response.data });
          })
          .catch((error) => {
             console.log(error);
          })
       }
-      deleteExercise(id) {  
-        axios.delete(BACKEND_URL + 'exercises/'+id)  
-        .then(res => console.log(res.data)); 
     
-        this.setState({  
-        exercises: this.state.exercises.filter(el => el._id !== id)  
-  })  
-}
-exerciseList() {
-    return this.state.exercises.map(currentexercise => {
-      return <Exercise exercise={currentexercise} deleteExercise={this.deleteExercise} key={currentexercise._id}/>;
+attractionList() {
+    return this.state.attractions.map(currentattraction => {
+      return <Attraction attraction={currentattraction} deleteAttraction={this.deleteAttraction} key={currentattraction._id}/>;
     })
   }
   render() {
     return (
         <div>
-        <h3>Logged Exercises</h3>
+        <h3>Logged Attractions</h3>
         <table className="table">
           <thead className="thead-light">
             <tr>
@@ -56,7 +47,7 @@ exerciseList() {
             </tr>
           </thead>
           <tbody>
-            { this.exerciseList() }
+            { this.attractionList() }
           </tbody>
         </table>
       </div>
