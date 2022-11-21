@@ -13,9 +13,14 @@ code {
 }
 
 .homeImg {
-  width: 100%;
-  height: auto;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Cincinnati_Skyline_-_panoramio.jpg');
+  padding-top: 0%;
 }
+
+.homeImg2 {
+  background-image: url('https://live.staticflickr.com/4818/44436783010_cc5db9d2e3_b.jpg');
+}
+
 
 .center {
   text-align: center;
@@ -37,29 +42,88 @@ code {
 }
 
 .sports {
-  background-color: orange;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(https://live.staticflickr.com/65535/51394704899_281b892f50_b.jpg);
+  background-size: cover;
+  color: white !important;
 }
 
 .food {
-  background-color: red;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokGJo9_cNfnDsZhVtmx-_aoX6gcWwCaGkgKn_CRLOapXgsRU3HyU2ogNEjfMwpScyd-I&usqp=CAU);
+  background-size: cover;
+  color: white !important;
 }
 
 .drinks {
-  background-color: darkorchid;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjU9lrHlF-IT6me2iMZxUCHued4fXsBthoepLEsXlR6OBinRcbcICv-CxdSEkflUOqT9E&usqp=CAU');
+  background-size: cover;
+  color: white !important;
 }
 
 .art {
-  background-color: mediumaquamarine;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+
+    url('https://live.staticflickr.com/5646/20930361938_5af836d81d_b.jpg');
+  background-size: cover;
+  color: white !important;
 }
 
 .history {
-  background-color: green;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+
+    url('https://upload.wikimedia.org/wikipedia/commons/d/d4/Roebling_Suspension_Bridge%2C_Cincinnati%2C_OH_%2833760900118%29.jpg');
+  background-size: cover;
+  color: white !important;
 }
 
 .music {
-  background-color: steelblue;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaNJaiEfNKuKWNCjHPSN-oBS7dttrno9jOJufM_ZEQQsE7zG_oIUzghtPK80vchdRr9Rc&usqp=CAU');
+  background-size: cover;
+  color: white !important;
 }
 
 .navbar-brand {
   color: rgb(10, 107, 126) !important;
 }
+
+.map-text {
+  font-size: small;
+  color: gray;
+}
+
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home1 {
+  background-color: rgb(255, 255, 255);
+}
+
+/* .contactImg {
+  background-image: url('https://pix4free.org/assets/library/2021-01-19/originals/cincinnati.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */

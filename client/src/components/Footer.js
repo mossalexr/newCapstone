@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="text-center text-lg-start bg-light text-muted mt-3">
             {/* Section: Links  */}
             <section className>
-                <div className="container text-center text-md-start mt-5">
+                <div className="container text-center text-md-start mt-5 pt-1">
                     {/* Grid row */}
                     <div className="row mt-3">
                         {/* Grid column */}
