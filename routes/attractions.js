@@ -12,10 +12,10 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
   const name = req.body.name;
   const location = req.body.location;
+  const imageURL = req.body.imageURL
 
 
-
-  const newAttraction = new Attraction({name, location});
+  const newAttraction = new Attraction({name, location, imageURL});
 
 
   newAttraction.save()

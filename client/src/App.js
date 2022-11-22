@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import FoodDrink from './components/FoodDrink';
-import Attractions from './components/Attractions';
+import AttractionsList from './components/Attractions-list';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -21,7 +21,7 @@ export default class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/fooddrink" component={FoodDrink} />
-            <Route path="/attractions" component={Attractions} />
+            <Route path="/attractions" component={AttractionsList} />
             <Route path="/contact" component={Contact} />
           </Switch>
           <Footer />

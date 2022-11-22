@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">    CINCINNATI</a>
+            <a className="navbar-brand" href="/">    CINCINNATI</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -18,10 +18,10 @@ const Nav = () => {
                             Attractions
                         </button>
                         <div className="dropdown-menu">
-                            <Link className="dropdown-item" href="/attractions">Fun</Link>
-                            <Link className="dropdown-item" href="/attractions">History</Link>
-                            <Link className="dropdown-item" href="/attractions">Food</Link>
-                            <Link className="dropdown-item" href="/attractions">Drinks</Link>
+                            <Link className="dropdown-item" to="/attractions">Fun</Link>
+                            <Link className="dropdown-item" to="/attractions">History</Link>
+                            <Link className="dropdown-item" to="/attractions">Food</Link>
+                            <Link className="dropdown-item" to="/attractions">Drinks</Link>
                         </div>
                     </div>
 

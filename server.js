@@ -1,14 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const cors = require('cors')
 require('dotenv').config();
 
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-
-
+app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
@@ -23,17 +22,17 @@ connection.once('open', () => {
 })
 
 const attractionsRouter = require('./routes/attractions');
-// const usersRouter = require('./routes/users');  
 const contactsRouter = require('./routes/contact');
+
 app.use('/attractions', attractionsRouter);
-// app.use('/users', usersRouter);
 
 
-// const usersRouter = require('./routes/contacts');  
 
 app.use('/contact', contactsRouter);
-// app.use('/contacts', contactsRouter);
-
+// app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     next();
+//   });
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });

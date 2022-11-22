@@ -1,11 +1,11 @@
 import React, { Component } from 'react'; 
 import axios from 'axios';
 
-const Attraction = props => (
-    <div>
+const Attraction = (props) => (
+    <div className='text-center'>
       <h3>{props.attraction.name}</h3>
       <h4>{props.attraction.location}</h4>
-      <div>{props.attraction.imageURL}</div>
+      <img src={props.attraction.imageURL} alt='otr'/>
     </div>
   )
 
@@ -13,7 +13,6 @@ export default class AttractionsList extends Component {
     constructor(props) {  
         super(props); 
         
-        this.deleteAttraction = this.deleteAttraction.bind(this); 
         
         this.state = {attractions: []};  
       }
@@ -29,27 +28,21 @@ export default class AttractionsList extends Component {
     
 attractionList() {
     return this.state.attractions.map(currentattraction => {
-      return <Attraction attraction={currentattraction} deleteAttraction={this.deleteAttraction} key={currentattraction._id}/>;
+      return <Attraction attraction={currentattraction} key={currentattraction._id}/>;
     })
   }
   render() {
     return (
         <div>
         <h3>Logged Attractions</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Username</th>
-              <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
+              <div>Username</div>
+              <div>Description</div>
+              <div>Duration</div>
+              <div>Date</div>
+              <div>Actions</div>
+          <div>
             { this.attractionList() }
-          </tbody>
-        </table>
+          </div>
       </div>
     )
   }

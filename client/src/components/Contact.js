@@ -43,7 +43,7 @@ const Contact = () => {
           </div>
         </form>
         <div className="text-center text-md-left">
-          <a className="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          <button className="btn btn-primary" onclick="document.getElementById('contact-form').submit();" >Send</button>
         </div>
         <div className="status" />
       </div>
