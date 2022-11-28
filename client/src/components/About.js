@@ -7,12 +7,12 @@ const About = () => {
       <br />
       <br />
       <div className="center">
-        <div>
+        <div className='aboutHead'>
           <h1>Cincinnati - the perfect mix between big city and suburban living.</h1>
         </div>
         <br />
         <br />
-        <p>Cincinnati is a major city in the U.S. state of Ohio and the government seat of Hamilton County. Settled in 1788, the city is located at the northern side of the confluence of the Licking and Ohio rivers, the latter of which marks the state line with Kentucky. The city is the economic and cultural hub of the Cincinnati metropolitan area, the fastest growing economic power in the Midwestern United States based on increase of economic output, which had a population of 2,190,209 as of the 2018 census estimates. This makes it Ohio's largest metropolitan area and the nation's 29th-largest.</p>
+        <p className='aboutPar'>Cincinnati is a major city in the U.S. state of Ohio and the government seat of Hamilton County. Settled in 1788, the city is located at the northern side of the confluence of the Licking and Ohio rivers, the latter of which marks the state line with Kentucky. The city is the economic and cultural hub of the Cincinnati metropolitan area, the fastest growing economic power in the Midwestern United States based on increase of economic output, which had a population of 2,190,209 as of the 2018 census estimates. This makes it Ohio's largest metropolitan area and the nation's 29th-largest.</p>
       </div>
       <br />
       

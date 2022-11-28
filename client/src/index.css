@@ -120,6 +120,29 @@ code {
   background-color: rgb(255, 255, 255);
 }
 
+.homePar {
+  line-height: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.aboutPar {
+  line-height: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.homeHead {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.aboutHead {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-left: 150px;
+}
 /* .contactImg {
   background-image: url('https://pix4free.org/assets/library/2021-01-19/originals/cincinnati.jpg');
   background-attachment: fixed;

@@ -34,12 +34,6 @@ attractionList() {
   render() {
     return (
         <div>
-        <h3>Logged Attractions</h3>
-              <div>Username</div>
-              <div>Description</div>
-              <div>Duration</div>
-              <div>Date</div>
-              <div>Actions</div>
           <div>
             { this.attractionList() }
           </div>
