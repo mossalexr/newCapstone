@@ -6,12 +6,11 @@ const attractionSchema = new Schema({
     name: {
         required: true,
         type: String,
-        unique: true,
+        unique: true
     },
     location: {
         required: true,
-        type: String,
-        unique: true
+        type: String
     },
     imageURL: {
         type: String,

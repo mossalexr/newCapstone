@@ -33,7 +33,7 @@ code {
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .sm-img {
@@ -128,8 +128,8 @@ code {
 
 .aboutPar {
   line-height: 35px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 
 .homeHead {
@@ -140,8 +140,8 @@ code {
 .aboutHead {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 350px;
+  margin-left: 350px;
 }
 /* .contactImg {
   background-image: url('https://pix4free.org/assets/library/2021-01-19/originals/cincinnati.jpg');
@@ -150,3 +150,12 @@ code {
   background-repeat: no-repeat;
   background-position: center;
 } */
+
+.attractionsImg {
+  width: 300px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+}
